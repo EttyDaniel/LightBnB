@@ -177,3 +177,22 @@ const addProperty = function(property) {
     });
 }
 exports.addProperty = addProperty;
+
+/**
+ * Add a reservation to the database
+ * @param {{}} reservation An object containing all of the reservation details.
+ * @return {Promise<{}>} A promise to the reservation.
+ */
+
+const addReservation = function(reservation) {
+  /*
+   * Adds a reservation from a specific user to the database
+   */
+  return pool.query(`
+    INSERT INTO reservations (start_date, end_date, property_id, guest_id)
+    VALUES ($1, $2, $3, $4) RETURNING *;
+  `, [reservation.start_date, reservation.end_date, reservation.property_id, reservation.guest_id])
+  .then(res => res.rows[0])
+}
+
+exports.addReservation = addReservation;
