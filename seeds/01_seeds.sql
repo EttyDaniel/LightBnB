@@ -4,11 +4,11 @@ VALUES ('Bob Cat', 'bobthecat@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.J
 ('Max Stock', 'maxstock@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
 
 
-INSERT INTO properties (owner_id, title, decsription, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code)
-VALUES (1, 'house of fun', 'decsription', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 100, 1, 2, 3,'Canada', '555 blackstone drive', 'Toronto', 'Ontario', '88888'),
-(2, 'my dream catle', 'decsription', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 120, 3, 3, 3, 'Canada', '45 best street', 'Ottawa', 'Ontario', '12AA1'),
-(3, 'a cabin in the woods', 'decsription', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 250, 4, 2, 4, 'Canada', '14 moon crescent', 'Mont Tremblent', 'Quebec', '48484'),
-(1, 'luxurious penthouse', 'decsription', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 300, 2, 3, 6, 'Canada', '123 yellow brick road', 'New hamf', 'Nova Scotia', '2585');
+INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code)
+VALUES (1, 'house of fun', 'description', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 100, 1, 2, 3,'Canada', '555 blackstone drive', 'Toronto', 'Ontario', '88888'),
+(2, 'my dream catle', 'description', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 120, 3, 3, 3, 'Canada', '45 best street', 'Ottawa', 'Ontario', '12AA1'),
+(3, 'a cabin in the woods', 'description', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 250, 4, 2, 4, 'Canada', '14 moon crescent', 'Mont Tremblent', 'Quebec', '48484'),
+(1, 'luxurious penthouse', 'description', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 300, 2, 3, 6, 'Canada', '123 yellow brick road', 'New hamf', 'Nova Scotia', '2585');
 
 
 INSERT INTO reservations (start_date, end_date, property_id, guest_id)
